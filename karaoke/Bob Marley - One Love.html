@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../style/style.css">
+
+<style>
+	body{
+		background-image: url("../img/giphy.gif");
+		background-size: 125%;
+	}
+</style>
+</head>
+
+<body>
+	<h1 id="word">Song: One Love</h1>
+	<audio controls>
+		<source src="audio/bob-marley-one-love.mp3">
+	</audio>
+	<script language="JavaScript">
+	
+	var song = "One love, one heart Let's get together and feel all right Hear the children crying (One love) Hear the children crying (One heart) Sayin', Give thanks and praise to the Lord and I will feel all right Sayin', Let's get together and feel all right Whoa, whoa, whoa, whoa Let them all pass all their dirty remarks (one love) There is one question I'd really love to ask (one heart) Is there a place for the hopeless sinner Who has hurt all mankind just to save his own? Believe me One love, one heart Let's get together and feel all right As it was in the beginning (one love) So shall it be in the end (one heart) Alright, give thanks and praise to the Lord and I will feel all right Let's get together and feel all right One more thing Let's get together to fight this Holy Armageddon (one love) So when the Man comes there will be no, no doom (one song) Have pity on those whose chances grow thinner There ain't no hiding place from the Father of Creation Sayin', one love, one heart Let's get together and feel all right I'm pleading to mankind (one love) Oh, Lord (one heart) whoa Give thanks and praise to the Lord and I will feel all right Let's get together and feel all right Give thanks and praise to the Lord and I will feel all right Let's get together and feel all right";
+		
+	var songWords = song.split(' ');
+	var wordIndex = 0;
+				
+	function NextWord() 
+	{
+		document.getElementById("word").innerHTML = songWords[wordIndex++];
+	}
+	
+	function ResetWords() 
+	{
+		wordIndex = 0;
+		document.getElementById("word").innerHTML = "Song: One Love";
+	}
+	</script>
+	<button onclick="NextWord()" type="button">Process</button>
+	<button onclick="ResetWords()" type="button">Reset</button>
+	<button type="button" onclick = "window.location.href='../home.html'">Leave</button>
+</body>
+</html>

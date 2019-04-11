@@ -1,0 +1,47 @@
+form{
+        margin-top: 7%;
+}
+body
+{
+    background-image: url("img/big-bang-sound-1jpg.jpg");
+    background-size: 99%;
+	color: black;
+	font-style: italic; 
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1
+{
+    color: white;
+    font-size:500%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-shadow: 15px 15px 15px purple;
+}
+
+::placeholder
+{
+	color:gray;
+}
+
+button
+{
+	width: 10%;
+	font-size: 50%;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.login
+{
+	font-size:150%;
+	color: purple;
+	background: white;
+	border: solid 1px black;
+	box-shadow: 5px 5px 10px purple;
+	width:25%;
+}
+
+input:focus
+{
+	box-shadow: 10px 10px 15px purple;
+}
+

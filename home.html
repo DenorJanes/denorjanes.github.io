@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body align = center>
+		<form style = "font-size:250%">
+			<input type="radio" name="song" id = "Bob Marley - One Love.html">
+				Bob Marley - One Love
+			</input>
+			<br>
+			<input type="radio" name="song" id = "Bob Marley & The Wailers – Three Little Birds.html">
+				Bob Marley & The Wailers – Three Little Birds
+			</input>
+			<br>
+			<input type="radio" name="song" id = "Bobby McFerrin - Don't Worry Be Happy.html">
+				Bobby McFerrin - Don't Worry Be Happy
+			</input>
+			<br>
+			<input type="radio" name="song" id = "Louis Armstrong - Hello, Dolly!.html">
+				Louis Armstrong - Hello, Dolly!
+			</input>
+			<br>
+			<input type="radio" name="song" id = "Louis Armstrong - What A Wonderful World.html">
+				Louis Armstrong - What A Wonderful World
+			</input>
+			<br>
+			<input type="radio" name="song" id = "Perry Como - Magic Moments.html">
+				Perry Como - Magic Moments
+			</input>
+			<br>
+			<input type="radio" name="song" id = "The Chordettes – Mr. Sandman.html">
+				The Chordettes – Mr. Sandman
+			</input>
+			<br><br>
+	
+			<script language="JavaScript">
+			function Pick() 
+			{
+				var radios = document.getElementsByName('song');
+				for (var i = 0, length = radios.length; i < length; i++)
+					if (radios[i].checked)
+						window.location.replace('karaoke/' + radios[i].id);
+			}
+
+			</script>
+		</form> 
+			<button class = "login" onclick="Pick()" type="button">Pick</button>
+			<button class = "login" type="button" onclick = "window.location.href= 'index.html'">Log out</button>
+	</body>
+</html>

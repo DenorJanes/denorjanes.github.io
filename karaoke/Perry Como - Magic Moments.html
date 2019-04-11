@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../style/style.css">
+
+<style>
+	body{
+		background-image: url("../img/giphy.gif");
+		background-size: 125%;
+	}
+</style>
+</head>
+
+<body>
+	<h1 id="word">Song: Magic Moments</h1>
+	<audio controls>
+		<source src="audio/Perry Como - Magic Moments.mp3">
+	</audio>
+	<script language="JavaScript">
+	
+	var song = "Magic moments, when two hearts are carin' Magic moments, mem'ries we've been sharing I'll never forget the moment we kissed the night of the hay ride The way that we hugged to try to keep warm while takin' a sleigh ride Magic moments, mem'ries we've been sharin' Magic moments, when two hearts are carin' Time can't erase the memory of These magic moments filled with love The telephone call that tied up the line for hours and hours The Saturday dance I got up the nerve to send you some flowers Magic moments, mem'ries we've been sharin' Magic moments, when two hearts are carin' Time can't erase the memory of These magic moments filled with love The time that the floor fell out of my car when I put the clutch down (The penny arcade, the games that we played, the fun and the prizes) The Halloween hop when everyone came in funny disguises Magic moments filled with love";
+		
+	var songWords = song.split(' ');
+	var wordIndex = 0;
+				
+	function NextWord() 
+	{
+		document.getElementById("word").innerHTML = songWords[wordIndex++];
+	}
+	
+	function ResetWords() 
+	{
+		wordIndex = 0;
+		document.getElementById("word").innerHTML = "Song: Magic Moments";
+	}
+	</script>
+	<button onclick="NextWord()" type="button">Process</button>
+	<button onclick="ResetWords()" type="button">Reset</button>
+	<button type="button" onclick = "window.location.href='../home.html'">Leave</button>
+</body>
+</html>
